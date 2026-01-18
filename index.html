@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
     <link
@@ -38,6 +39,12 @@
           </ul>
         </nav>
 
+        <button type="button" class="menu-open-btn" aria-label="Open menu">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
         <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -54,6 +61,87 @@
         </address>
       </div>
     </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button
+          type="button"
+          class="mobile-menu-close-btn"
+          aria-label="Close menu"
+        >
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-contacts">
+          <ul class="mobile-menu-contacts-list">
+            <li class="mobile-menu-contacts-item">
+              <a
+                class="mobile-menu-contacts-link accent"
+                href="tel:+110001111111"
+              >
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a
+                class="mobile-menu-contacts-link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu-social-list">
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <!-- HERO -->
@@ -481,7 +569,7 @@
     </footer>
 
     <!-- BACKDROP -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <!-- MODAL -->
       <div class="modal">
         <!-- CLOSE BUTTON -->
