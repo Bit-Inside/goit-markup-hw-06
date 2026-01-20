@@ -67,8 +67,14 @@ button {
 
 /* #region SECTION */
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media (min-width: 1158px) {
+  .section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
 /* #endregion */
 
@@ -98,11 +104,8 @@ button {
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header-nav {
@@ -112,7 +115,6 @@ button {
 
 .header-nav .logo {
   display: inline-block;
-  margin-right: 76px;
 }
 
 .nav-list {
@@ -202,9 +204,14 @@ button {
     gap: 40px;
   }
 
+  .header-nav .logo {
+    margin-right: 120px;
+  }
+
   .contacts {
     display: block;
     margin-left: auto;
+    font-style: normal;
   }
 
   .contacts-list {
@@ -401,6 +408,8 @@ button {
 /* #endregion */
 
 /* #region HERO */
+
+/* MOBILE */
 .hero {
   padding: 72px 0;
   text-align: center;
@@ -414,12 +423,47 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  /* MOBILE 1X */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/hero/hero-mob@1x.jpg');
+}
+
+.hero-title {
+  max-width: 216px;
+  margin: 0 auto 48px;
+
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #4d5ae5;
+  color: #ffffff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
 }
 
 /* MOBILE 2X */
@@ -433,17 +477,26 @@ button {
   }
 }
 
-/* TABLET 1X*/
+/* TABLET */
 @media (min-width: 768px) {
   .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/hero/hero-tab@1x.jpg');
   }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+  }
 }
-/* TABLET 2X*/
+
+/* TABLET 2X */
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
@@ -453,9 +506,13 @@ button {
       url('../images/hero/hero-tab@2x.jpg');
   }
 }
-/* DECKTOP 1X */
+
+/* DESKTOP */
 @media (min-width: 1158px) {
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -463,7 +520,8 @@ button {
       url('../images/hero/hero-desk@1x.jpg');
   }
 }
-/* DECKTOP 2X */
+
+/* DESKTOP 2X */
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
@@ -474,39 +532,6 @@ button {
   }
 }
 
-.hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px;
-  color: #ffffff;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-}
-
-.hero-btn {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  margin: 0 auto;
-  border: none;
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #404bbf;
-}
 /* #endregion */
 
 /* #region BENEFITS */
